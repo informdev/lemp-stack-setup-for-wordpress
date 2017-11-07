@@ -1,0 +1,7 @@
+This is the LEMP stack I've been playing with when setting up my own servers for WordPress.
+
+My goal is create something that can handle 10,000 real time users at once on limited hardware.
+
+If you plan on using this I assume you at least sorta know what you're doing in SSH and I take no responsibility if you screw something up. I cannot offer support for this either.
+
+This entire thing is for me, myself, and I so use at your own risk.
