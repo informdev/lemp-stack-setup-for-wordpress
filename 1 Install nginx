@@ -1,0 +1,3 @@
+Ubuntu has made installing a lot of software easier than ever. Installing nginx is one simple line. Run it and follow any prompts you're given.
+
+apt-get install nginx
