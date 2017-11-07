@@ -1,0 +1,24 @@
+Faster and leaner than standard mySQL so let's use it!
+
+sudo apt-get install mariadb-server mariadb-client
+
+After it’s installed, MariaDB server should be automatically stared. Use systemctl to check its status.
+
+systemctl status mysql
+
+Then you outta see an output like this:
+mysql.service - LSB: Start and stop the mysql database server daemon
+Loaded: loaded (/etc/init.d/mysql; bad; vendor preset: enabled)
+Active: active (running) since Wed 2016-04-20 18:52:01 EDT; 1min 30s ago
+Docs: man:systemd-sysv-generator(8)
+
+If it’s not running, start it with this command:
+sudo systemctl start mysql
+
+To enable MariaDB to automatically start when Ubuntu 16.04 is rebooted:
+sudo systemctl enable mysql
+
+Now run the post installation security script.
+
+sudo mysql_secure_installation
+When it asks you to enter MariaDB root password, press enter because you have not set the root password yet. Then enter y to set the root password for MariaDB server.
